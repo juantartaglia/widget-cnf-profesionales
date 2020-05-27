@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "wc-build": "npm run build -- --target wc --inline-vue --name cnf-profesionales-widget",
+    "wc-serve": "cd dist && live-server --port=8080 --entry-file=./demo.html"
   },
   "dependencies": {
     "core-js": "^3.6.4",
